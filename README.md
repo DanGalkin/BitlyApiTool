@@ -6,7 +6,7 @@ BitlyApiTool is a program that takes a weblink as an argument and shortens it as
 
 ### How to install
 
-BitlyApiTool needs an API token of your Bitly.com account. [The instruction to get it](https://support.bitly.com/hc/en-us/articles/230647907-How-do-I-find-my-OAuth-access-token-).
+BitlyApiTool needs an API token of your Bitly.com account. [The instruction to get token](https://support.bitly.com/hc/en-us/articles/230647907-How-do-I-find-my-OAuth-access-token-).
 
 Token information should be stored in the .env file located as shown below:
 ```
