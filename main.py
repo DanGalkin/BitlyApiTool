@@ -5,8 +5,6 @@ import os
 from dotenv import load_dotenv
 import argparse
 
-load_dotenv()
-
 API_ENDPOINT = 'https://api-ssl.bitly.com/v4/{method}'
 
 def create_parser():
@@ -59,4 +57,5 @@ def main():
     print('Сокращенная ссылка: {}'.format(bitly_link))
 
 if __name__ == '__main__':
+  load_dotenv()
   main()
