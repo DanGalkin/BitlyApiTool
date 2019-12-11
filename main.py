@@ -21,8 +21,7 @@ def make_oauth_headers(token):
 
 def shorten_link(long_url, headers):
   data_to_shorten = {'long_url': long_url}
-  json_data_to_shorten = json.dumps(data_to_shorten)
-  short_link_response = requests.post(API_ENDPOINT.format(method='shorten'), headers=headers, data=json_data_to_shorten)
+  short_link_response = requests.post(API_ENDPOINT.format(method='shorten'), headers=headers, json=data_to_shorten)
   if short_link_response.ok:
     return short_link_response.json()['link']
 
