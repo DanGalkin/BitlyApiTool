@@ -37,7 +37,7 @@ def check_if_bitlink(url, headers):
   return bitlink_response.ok
 
 def main():
-  token = os.getenv("TOKEN")
+  token = os.getenv("BITLY_API_TOKEN")
   headers = make_oauth_headers(token)
   bitly_user_response = requests.get(API_ENDPOINT.format(method='user'), headers=headers)
   parser = create_parser()

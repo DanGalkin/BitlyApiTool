@@ -10,7 +10,7 @@ BitlyApiTool needs an API token of your Bitly.com account. [The instruction to g
 
 Token information should be stored in the .env file located as shown below:
 ```
-TOKEN=*your token*
+BITLY_API_TOKEN=*your token*
 ```
 Locate the .env file in the same folder with main.py.
 
